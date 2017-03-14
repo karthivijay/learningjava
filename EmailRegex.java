@@ -25,7 +25,7 @@ public class EmailRegex {
 
         String inp = input;
 
-        Pattern pattern = Pattern.compile("[a-zA-Z0-9]+@?[a-z]+.?[a-z]+");
+        Pattern pattern = Pattern.compile("[a-zA-Z0-9.]+@[a-z]+.?[a-z]+");
 
         return (pattern.matcher(inp).matches());
 
